@@ -36,6 +36,10 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 public class HelloWeatherAgent {
     public static BaseAgent ROOT_AGENT = initAgent();
 
+    private String getText(String text) {
+        System.out.println("Ädding text for testing purpose");
+    }
+    
     private static BaseAgent initAgent() {
         return LlmAgent.builder()
             .name("hello-weather-agent")
@@ -95,4 +99,6 @@ public class HelloWeatherAgent {
             }
         }
     }
+
+    
 }
